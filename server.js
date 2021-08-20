@@ -1,15 +1,5 @@
 const http = require('http');
 const fs = require('fs');
-const url = require('url');
-const path = require('path');
-
-let mimeTypes = {
-    "html": "text/html",
-    "jpeg": "image/jpeg",
-    "jpg": "image/jpeg",
-    "png": "image/png",
-    "js": "text/javascript",
-    "css": "text/css"};
 
 const PORT = process.env.PORT || 5000
 
