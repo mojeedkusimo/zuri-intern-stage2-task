@@ -403,7 +403,7 @@
             <h4>FEDERAL GOVERNMENT COLLEGE, LAGOS</h4>
           </div>
           <div class="col">
-            <h4>SENIOR SECONDARY CERTIFICATE EXAMINATION (SSCE)</h4>
+            <h4 onclick="stopRefresh()">SENIOR SECONDARY CERTIFICATE EXAMINATION (SSCE)</h4>
           </div>
         </div>
         <div class="row">
@@ -419,7 +419,7 @@
         <!-- Contact Form -->
         <h3 class="my-5 text-center border-bottom border-primary">CONTACT ME</h3>
 
-    <form class="mx-5" action="../server.js" method="POST">
+    <form class="mx-5" action="../server.js" method="POST" onsubmit="stopRefresh()">
       <div class="form-row">
         <div class="form-group">
           <label for="name">NAME</label>
@@ -434,7 +434,9 @@
         <label for="message">MESSAGE</label>
         <textarea type="text" class="form-control" id="message" placeholder="Type something..." rows="5" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary mb-5">SUBMIT</button>
+      <button type="submit" class="btn btn-primary mb-5" onclick="stopRefresh()">SUBMIT</button>
     </form>
+
+    <script src="../public/js/script.js"></script>
 </body>
 </html>
